@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# A test script to send text messages automatically
+# To execute, run ./text_script 
+# If permission denied, run the following from command line:
+# chmod 701 text_script
+# then execute ./text_script
+
+printf "\n***********************************\n\n"
+printf "Welcome to the automated text messaging service! \n"
+printf "Have fun harassing your friends."
+printf "\n\n"
+printf "***********************************\n\n"
+
+# Run c++ executable "input" and store the input from user
+#result=$(./input)
+
+# Set IFS to null to keep whitespace for message variable
+IFS=
+
+# Read in variables for each line of output from input.cpp executable
+for variable in provider numTexts recipient message; do
+    read -r $variable
+done < <(./input)
+
+
+# DEBUG: Confirming the correct strings are going into the correct variables
+#***********************************
+printf "The result from executable: "
+printf $provider
+printf "; "
+printf $numTexts
+printf "; "
+printf $recipient
+printf "; "
+printf $message
+printf "\n\n"
+#***********************************
+
+# Create the entire command and put into a variable with all the variables contained.
+# This is currently a test to see if the text sends. But I'm at work with no frickin internet.
+
+#echo "Sent from my terminal" | mail -s 'Test Message' '2182486818@text.republicwireless.com'
