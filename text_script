@@ -40,4 +40,4 @@ printf "\n\n"
 # Create the entire command and put into a variable with all the variables contained.
 # This is currently a test to see if the text sends. But I'm at work with no frickin internet.
 
-#echo "Sent from my terminal" | mail -s 'Test Message' '2182486818@text.republicwireless.com'
+#echo "Sent from my terminal" | mail -s 'Test Message' 'numberHere@text.republicwireless.com'
