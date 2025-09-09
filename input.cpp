@@ -91,7 +91,6 @@ std::string virginMobile(std::string cellNumber);
 	// Provider not found, exit
 	std::cerr << "Provider Not Found, Exiting. Maybe next time you'll get it right." << std::endl;
 	std::cerr << "One day I'll let you try more than once without re-running the program." << std::endl;
-	std::cerr << "NOTE: If your provider is not in the list, kys." << std::endl;
 	std::exit(0);
       }
       else {
